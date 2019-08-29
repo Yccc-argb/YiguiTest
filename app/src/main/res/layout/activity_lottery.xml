@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="me.code.yiguitest.lottery.LotteryActivity">
+    <Button
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_chupiao"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="出票"/>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_ruzhikou"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="入纸口状态"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_chupiaokou"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="出票口状态"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_qiedao"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="切刀状态"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_kazhi"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="卡纸状态"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btn_dianzisuo"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="电磁锁"/>
+
+</LinearLayout>
