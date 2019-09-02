@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     TextView tvTest;
     @BindView(R.id.bt_id)
     Button btId;
-    //    @BindView(R.id.bt_state)
-//    Button btState;
+    @BindView(R.id.bt_back)
+    Button btBack;
     @BindView(R.id.rl)
     RecyclerView rl;
     @BindView(R.id.tv_status)
@@ -277,6 +277,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         initiCheckBox();
+        btBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MainActivity.this.finish();
+            }
+        });
     }
 
     private void initiCheckBox() {
@@ -537,7 +543,7 @@ public class MainActivity extends AppCompatActivity {
                         if (ints.length > 3) {
                             if (ints[2] == 0) {
                                 Toast.makeText(this, "继电器已闭合", Toast.LENGTH_LONG).show();
-                            } else if (ints[2] == 1){
+                            } else if (ints[2] == 1) {
                                 Toast.makeText(this, "继电器已断开", Toast.LENGTH_LONG).show();
                             }
                         } else {
@@ -562,7 +568,7 @@ public class MainActivity extends AppCompatActivity {
                         if (ints.length > 3) {
                             if (ints[2] == 0) {
                                 Toast.makeText(this, "继电器已开启", Toast.LENGTH_LONG).show();
-                            } else if (ints[2] == 1){
+                            } else if (ints[2] == 1) {
                                 Toast.makeText(this, "继电器已断开", Toast.LENGTH_LONG).show();
                             }
                         } else {
